@@ -80,9 +80,9 @@ library
   -- Base language which the package is written in.
   default-language:    Haskell2010
 
-Test-Suite test-json-litobj
+Test-Suite test-$packageName
   type:             exitcode-stdio-1.0
-  hs-source-dirs:   test
+  hs-source-dirs:   test, src
   main-is:          Spec.hs
   build-depends:    base,
                     hspec >= 1.3,
